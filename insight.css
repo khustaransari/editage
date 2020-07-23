@@ -1,0 +1,254 @@
+.l
+{
+   
+    margin: 8px;
+}
+.ist
+{
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 25.00vh;
+    width: 27.5812vw;
+    margin-top: 50px;
+}
+.ist1
+{
+    border: 1px solid black;
+    border-radius: 18px;
+    height: 25.00vh;
+    width: 27.5812vw;
+    margin-top: 0px;
+}
+  .crousel-item
+  {
+      position: relative;
+      z-index: -1;
+  }
+  .dot
+  {
+      display: inline-block;
+      text-align: center;
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      color: white;
+      opacity: .6;
+  }
+  .do
+  {
+      border: 1px solid grey;
+      position: absolute;
+  }
+  .two
+  {
+      position:absolute;
+      color: #fffefe;
+      opacity:1;
+      bottom: 8px;
+      left: 30px;
+      font-size: 42px;
+  }
+
+.carousel .cell2
+{
+   margin:5px;
+    width: 180px; height:100px;
+    border-radius: 10px; 
+}
+.carousel-cell{
+    margin: 15px;
+    width: 19.5rem; height: 21.29rem;
+    border-radius: 10px;
+   
+    }
+ul
+{
+    list-style: none;
+}
+a:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.1);
+    
+}
+.read {
+    color: #004fff;
+    font-size: 20px;
+    font-weight: bold;
+    left: 16px;
+}
+.img-hover-zoom {
+    overflow: hidden;
+    height:50%;
+   
+  }
+  .img-hover-zoom img {
+    transition: transform .5s ease;
+  }
+  .img-hover-zoom:hover img {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  .Grammar a:hover
+  {
+      color: #004ffe;
+  }
+  
+  .icon
+  {
+      display: inline-block;
+      font-size:40px;
+      float: right;
+      margin-top: -58px;
+  }
+
+  .bt2{
+color:blue;
+padding:5px 10px;
+border:2px solid blue;
+font-size: 15px;
+font-weight: 500;
+border-radius:15px ;
+  }
+  .bt1{
+      background-color: crimson;
+      color:white;
+      font-size: 15px;
+      font-weight: 500;
+      padding:5px 10px;
+
+  }
+  .header .col-md-5 .search-bar{
+      background-color: rgb(206, 205, 205);
+      border-radius:15px;
+      padding:5px 15px;
+  }
+.back_col1{
+    background: url("./assets/img1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:120px;
+}
+.new-btn{
+    background-color: rgba(59, 59, 59, 0.6); color:white;font-size:10px ;
+              position:absolute; top:20px ;left:20px; border-radius:2px ; padding:5px;
+}
+.view-text{
+    color:white;
+    font-size:14px ;
+    padding:5px;
+    position: absolute;
+    top:130px;
+    left:20px;
+    background-color: rgba(116, 116, 116, 0.8);
+}
+.bottom-part{
+    display:flex;
+    margin-top:50px ;
+    flex-direction: row;
+    padding:0px 20px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.logo
+{
+    width: 118px;
+    height: 93px;
+    border: 1px solid red;
+    margin-right: 40px;
+}
+.container
+{
+    max-width: 100%;
+     border: 1px solid black;
+}
+.logo img
+{
+    width: 120px;
+    height: 26px;
+    margin-top: 38px;
+}
+.courses p
+{
+    color: rgba(4,0,0,0.60);
+    font-size: 21px;
+}
+.btns
+{
+    display:inline-block;
+}
+.featured
+{
+    width: 100px;
+    height: 42px;
+    border-radius: 3px;
+    border: 1px solid #0e2784;
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16);
+    background-color: #0e2784;
+    padding: 11px;
+    display:inline-block;
+}
+.funding
+{
+    width: 95px;
+    height: 42px;
+    border-radius: 3px;
+    border: 1px solid #0e2784;
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16);
+    padding: 10px;
+    display:inline-block;
+    margin-left: 20px;
+}
+.journal
+{
+    width: 180px;
+    height: 42px;
+    border-radius: 3px;
+    border: 1px solid #0e2784;
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16);
+    padding: 10px;
+    display:inline-block;
+    margin-left: 20px;
+}
+.impact
+{
+    width: 180px;
+    height: 42px;
+    border-radius: 3px;
+    border: 1px solid #0e2784;
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16);
+    padding: 10px;
+    display:inline-block;
+    margin-left: 20px;
+}
+.btns:hover
+{
+    cursor: pointer;
+}
+.card-body:hover
+{
+    cursor: pointer;
+    color: #004ffe;
+}
+.card-body a:hover
+{
+   text-decoration: none;
+   color: #007bff;
+   cursor: pointer;
+}
+.cardss1
+{
+    margin-right: 30px;
+}
+.conta
+{
+    padding: 0px 10px;
+    border: 1px solid grey;
+    max-width: 1570px;
+}
+
+

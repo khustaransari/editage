@@ -1,0 +1,699 @@
+<style>
+     *{
+         margin: 0;
+         padding: 0;
+     }
+     .covid_sec{
+    display:flex;
+   
+    justify-content: space-around;
+    
+     align-items: center;
+    background: linear-gradient( to right,#600d75,rgb(53, 122, 201));
+    
+}
+.covid_text{
+    font-size:15px ;
+    color:white;
+    padding:10px 5px 10px 5px;
+   
+}
+.avail_text{
+    font-size:17px ;
+    color:white;
+
+}
+.avail_text::before{
+    content:"Avail now <<"
+}
+.avail_text::after{
+    content:"";
+    height:2px;
+    background-color:white ;
+    display:block;
+    width:100%;
+
+}
+.close{
+    border:none;
+    outline:none;
+    padding:5px;
+    color:white;
+    
+}
+.nav-btn{
+    background-color: blue;
+    color:white;
+    padding:5px 10px ;
+    border:none;
+    outline: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 15px;
+}
+.nav-item{
+padding:5px 15px;
+text-align: center;
+text-transform: uppercase;
+color:black;
+font-weight: bolder;
+font-size: 12px;
+}
+.header_text{
+    color:blue;
+    padding: 0px 5px;
+    font-weight:bold ;
+}
+.header_text::before{
+    content:"Research Publication";
+    color:black;
+    font-weight: bold;
+    line-height:40px ;
+    display:block;
+    font-size:25px ;
+
+}
+.header_text::after{
+    content:"2,000+ native English editors. 1,300+ subjects of expertise. Your publication success is our mission";
+    color:black;
+    font-weight:normal ;
+    display:block ;
+    line-height:40px ;
+    font-size: 14px;
+    }
+.header .col-md-5, .header .col-md-11{
+    background-color:white;
+    text-align: center;
+    box-shadow:0px 0px 8px 1px rgb(187, 187, 187) ;
+    border-radius:5px ;
+    padding:15px;
+    border:1px solid grey;
+    height:60px;
+    margin-bottom:25px ;
+    margin-right:25px ;
+    display:flex;
+    align-items: center;
+    font-size: 15px;
+    justify-content: center;
+}
+.header .col-md-5 p, .header .col-md-11 p{
+    margin-bottom: 0px;
+}
+.header_b_t1{
+    margin-top: 60px;
+}
+.header_b_t1 h3{
+color:blue;
+font-weight: 800;
+}
+.header_b_t1 h5{
+    font-weight: 800;
+}
+.header_b_t1 h6{
+    color:grey;
+}
+.blue_div{
+    background-color: rgb(11, 11, 95);
+    margin-top:60px ;
+    padding:30px 5px 5px 20px;
+}
+.blue_h{
+    color:white;
+    font-weight: 800;
+    text-align: center;
+    line-height: 30px;
+}
+.blue_h::before{
+    content:"HELLO! WE ARE EDITAGE!";
+    font-size:10px ;
+    display:block;
+    color:white;
+    font-weight: 700;
+    line-height:30px ;
+    
+}
+.blue_div h6{
+    color:white;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 30px;
+    
+}
+.blue_2h{
+    color:white;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 30px;
+}
+.blue_2h::before{
+    content:"";
+    height:2px;
+    width:300px;
+    background-color:white ;
+     display:inline-block
+}
+.blue_2h::after{
+    content:"";
+    height:2px;
+    width:300px;
+    background-color:white ;
+    display: inline-block;
+    
+}
+.blue_3h{
+    color:white;
+   font-size:12px ;
+   font-style: italic;
+    text-align: center;
+    margin-top:30px ;
+}
+.blue_3h::before{
+    content:'"';
+    display:inline-block;
+    color:white;}
+
+.blue_3h::after{
+        content:'"';
+       display:inline-block;
+        color:white;}
+.list_smll_pt{
+   display:flex;
+  
+   justify-content:center; 
+}
+.list_smll_pt li{
+    color:grey;
+    font-size: 13px;
+    padding:5px;
+}
+.sec_h{
+    color:black;
+    font-weight: 800;
+    text-align: center;
+    line-height: 30px;
+}
+ .sec_2h{
+     color:black;
+     font-weight: 900;
+     font-size:20px ;
+     padding:5px;
+     margin-bottom: 0px;
+    
+ } 
+ .sec_2h::before{
+     content:"GETTING YOU PUBLISHED";
+     text-transform: uppercase;
+     font-size: 13px;
+     display: block;
+     color:blue;
+     font-weight:500;
+ }
+ .sec_3h{
+     color:gray;
+     font-size:14px ;
+     text-align: justify;
+     padding:5px;
+     line-height:30px ;
+ }  
+.img_con{
+    background-image: url("./assets/editechimg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sec_div1 .row{
+ margin-bottom: 50px;
+}
+.blue_4h{
+    color:white;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+.custom_col{
+    width:240px;
+    margin:5px 15px;
+    border-radius:5px ;
+    
+    
+}
+.c_band{
+    box-shadow:0px 0px 8px 1px rgb(184, 183, 183) ;
+    display:flex;
+    justify-content:space-between ;
+}
+.text_part{
+    display:flex ;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin:20px 30px 20px 30px;
+}
+.persona_div{
+    margin-top:60px ;
+
+}
+.circle{
+    height:150px;
+    width:150px;
+    border:1px solid black;
+    border-radius: 50%;
+    position:absolute;
+}
+.persona_div h3{
+    text-align: center;
+    font-weight: 500;
+    line-height:40px ;
+}
+.persona_div h6{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+
+
+
+
+.promise_div .row{
+    display:flex;
+    justify-content:center;
+
+}
+     .header-section{
+         background: lightgray;
+     }
+     .header-section h2{
+         font-weight: bold;
+     }
+     .header-section p{
+         color: black;
+     }
+     .sec-header{
+         background: purple;
+         margin: 0;
+         padding: 30px;
+     }
+     .box{
+         justify-content: center;
+         align-items: center;
+         margin: 10px;
+         padding: 5px;
+         
+         transition: 0.4s ease;
+     }
+    
+       
+    
+     .card-body li{
+         list-style: none;
+         font-size: 1rem;
+         padding: 7px;
+     }
+     .card-body .cross{
+         color: gray;
+     }
+     .check{
+         color: greenyellow !important;
+     }
+     .card-head .advance{
+         color:orange;
+     }
+     .card-head .premium{
+         color:violet
+     }
+     .card-head .scientific{
+         color: teal;
+     }
+     .card-head p{
+         font-weight: bold;
+     }
+     .card-head .money{
+         font-weight: bold;
+         font-size: 2rem;
+         
+     }
+     .card-head h5{
+         padding-bottom: 19px;
+     }
+     .card-head .best{
+         background: orange;
+         background-size: cover;
+        padding: 13px;
+         font-size: 0.9rem;
+     }
+     .card-head .most{
+         background: violet;
+         padding: 13px;
+         font-size: 0.9rem;
+     }
+     .card-head .service{
+         background: teal;
+         padding: 13px;
+         font-size: 0.9rem;
+     }
+     .card:hover{
+        box-shadow: 0 0 20px 0 rgba(0 ,0, 0,0.3 );
+        
+     }
+     .card a:hover{
+        box-shadow: 0px 0px 2px 2px blue;
+     }
+     .button a{
+      border: 1px solid white;
+      border-radius: 100px;
+      margin: 0 5px;
+      padding: 11px 35px;
+      color: white;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.4;
+      text-align: center;
+
+    }
+    .button{
+        text-align: center;
+        margin-top:30px;
+    }
+    .button a:hover{
+      color: black;
+      background: white;
+      text-decoration: none;
+      box-shadow: 0 0 20px 0 rgba(0 ,0, 0,0.3 );
+    }
+   h2{
+       font-weight: bold;
+   }
+   .card-headr{
+       padding: 4px;
+
+   }
+   .card-headr .sec{
+       background: violet;
+       font-weight: bold;
+    }
+    .pre , .scien{
+        font-weight: bold;
+    }
+    .sec p{
+        font-size: 0.9rem;
+    }
+    .pre p{
+        font-size: 0.9rem;
+        font-weight: bold;
+    }
+    .scien p{
+        font-size: 0.9rem;
+        font-weight: bold;
+    }
+
+    .card-headr a{
+        font-size: 23px;
+        text-decoration: none;
+    }
+   .card-headr .pre:hover{
+       color: blue;
+   }
+   .card-headr .scien:hover{
+       color: blue;
+   }
+   .delete h6{
+       font-weight: bold;
+   }
+   .delete p{
+       font-size: 0.8rem;
+   }
+   
+    .boc{
+    
+         justify-content: center;
+         align-items: center;
+         padding: 15px;
+         
+         transition: 0.4s ease;
+     }
+    .scien:hover{
+            background: violet;
+        }
+        .pre:hover{
+        background: violet;
+    }
+    center{
+        padding: 7px;
+        margin: 10px;
+    }
+    .third-header{
+        background: purple;
+        padding: 50px;
+    }
+    .third-header h1{
+        color: white;
+        font-size: 2rem;
+    } 
+    .third-header h3{
+        color: white;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    .third-header .sm-box{
+        border-left: 5px solid teal;
+    }
+    .third-header .sl-box{
+        border-left: 5px solid goldenrod;
+    }
+    .third-header .sp-box{
+        border-left: 5px solid cornflowerblue;
+    }
+    .forth-header{
+        padding: 50px;
+    }
+    .forth-header p{
+        color: darkcyan;
+        font-weight: bold;
+    }
+    
+    .forth-header .card-head{
+        font-size: 1.3rem;
+        font-weight: bold;
+        padding: 40px;
+    }
+    .forth-header .card-body{
+        font-size: 0.9rem;
+    }
+    .fifth-header{
+        background: lightgray;
+
+    }
+    .six-header{
+        background: purple;
+        padding: 50px;
+    
+    }
+    .six-header h2{
+        color: white;
+    }
+    .six-header .boc1{
+        width:600px;
+        height: 20px;
+        background: white;
+        padding: 40px;
+    }
+    .boc1:hover{
+        height:50px;
+        box-shadow:0 0 10px rgba(0,0,0,0.13);
+    }
+    .seven-header{
+        background: lightgray;
+        padding:50px;
+    }
+    .seven-header img{
+        border-radius: 100px;
+        
+    }
+    .boxx{
+        width: 100%;
+         justify-content: center;
+         align-items: center;
+         margin: 30px;
+         padding: 15px;
+         box-shadow: 0 0 20px 0 rgba(0 ,0, 0,0.3 );
+         transition: 0.4s ease;
+         background: white;
+         height: 500px;
+    }
+    .boxx h3{
+        font-weight: bold;
+    }
+    .boxx .rare{
+        color:gray;
+    }
+    .boxx .still{
+        color: black;
+        font-weight: bold;
+    }
+    
+    .bof{
+        border-left: 6px solid violet;
+    }
+    .bol{
+        border-left: 6px solid teal;
+    }
+    .bog{
+        border-left: 6px solid greenyellow;
+    }
+    .eight-header .contact{
+        width: 100%;
+    padding: 100px;
+        margin-left: 30px;
+        
+    }
+    .eight-header h2{
+   font-weight: bold;
+   color: black;
+}
+.eight-header .input{
+   color: gray;
+}
+.eight-header .py{
+   font-weight: bold;
+}
+.nine-header{
+    background: purple;
+    padding: 50px;
+    color: white;
+}
+.nine-header .money{
+    font-size: 2.5rem;
+}
+.nine-header h3{
+    font-size: 1.2rem;
+}
+.nine-header h5{
+    font-size: 1rem;
+}
+.ten-header{
+
+}
+.footer{
+   background:purple;
+   width:100%;
+   padding: 50px;
+}
+.footer li{
+   list-style: none;
+   color: white;
+}
+.footer hr{
+   background-color:white;
+}
+.footer p{
+   color: white;
+}
+.footer .o{
+   font-size: 25px;
+   color: red;
+}
+/*extra css styling*/
+.hover_div{
+    
+    width:70vw;
+    box-shadow:0px 0px 8px 1px rgb(182, 181, 181) ;
+    
+}
+.hover_a:hover .hover_div{
+    display:block;
+}
+.row1{
+    display:flex;
+    width:100%;
+    flex-wrap: wrap;
+    
+}
+.row1 .col{
+    width:33.33%;
+    flex:0 0 33.33%;
+    padding:10px 10px 10px 20px;
+   
+    
+}
+.hover_bg{
+      padding-top: 10px;
+      border-radius: 3px;
+      padding-left:10px ;
+  }
+
+ 
+  .dropdown:hover .dropdown-menu{
+      display:block;
+      transition:all 1s ease ;
+  }
+   .p_col1
+   {font-size:13px ; font-weight: 800; margin-bottom: 5px; color:black;}
+   .p_col_why{
+    font-size:13px ; font-weight: 700; text-align: center;  color:black;
+    
+   }
+   .hover_bg2{
+       padding:5px 20px;
+   }
+   .hover_bg2:hover{
+ background-color:#E5B3FE ;
+   }
+   .p_col1:hover,.p_col_why:hover{
+       color:blue;
+       padding-bottom:10px ;
+   }
+   .hover_bg:hover .p_col1 ,.hover_bg:hover .p_col2{
+ color:blue;
+   }
+   .p_col2{
+    font-size:12px ;color:black ; margin-bottom: 5px;  
+   }
+   .hover_bg:hover{
+       background-color: rgba(201, 201, 201, 0.5);
+   }
+   .sticky-top2{
+  position:sticky;
+  top:60px; 
+  z-index:1019; 
+}
+.navbar{
+   background-color:transparent ;
+    
+}
+.nav-btn{
+    background-color: blue;
+    color:white;
+    padding:5px 10px ;
+    border:none;
+    outline: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 15px;
+}
+.nav-item{
+padding:5px 15px;
+text-align: center;
+text-transform: uppercase;
+color:black;
+font-weight: bolder;
+font-size: 12px;
+}
+.sec_h{
+    color:black;
+    font-weight: 800;
+    text-align: center;
+    line-height: 30px;
+}
+.freq_btn1,.freq_btn2,.freq_btn3,.freq_btn4{
+    border:none;
+    outline:none;
+    padding:5px;
+
+}
+
+
+

@@ -1,0 +1,927 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <title>New Project</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/8eb330855f.js" crossorigin="anonymous"></script>
+  <script>$(document).ready(function(){
+    $(window).scroll(function(){
+        var scroll = $(window).scrollTop();
+        if (scroll > 30) {
+          $(".navbar").css('background-color' ," white");
+          $(".navbar").css('box-shadow' ," 0px 0px 1px 2px rgb(187, 187, 187)");
+        }
+  
+        else{
+           
+            $(".navbar").css('box-shadow' ,"none"); 	
+        }
+    });
+  });
+  
+</script>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .header{
+        padding: 80px;
+    }
+    .header h2{
+        color: black;
+        font-weight: bold;
+    }
+    .header .budget{
+        color: white;
+        background: chocolate;
+        padding: 5px;
+        font-size: 0.8rem;
+        margin: 10px;
+    }
+    .header li{
+        color: black;
+        font-weight: 500;
+    }
+    .header .add{
+        padding: 30px;
+        font-size: 1.4rem;
+        color: #000;
+        font-weight: bold;
+    }
+    .header .edit{
+        font-weight: bold;
+        padding: 20px;
+    }
+    .box{
+         border-radius: 9px;
+         align-items: center;
+         margin: 0px;
+         padding: 15px;
+         box-shadow: 0 0 20px 0 rgba(0 ,0, 0,0.3 );
+         transition: 0.4s ease;
+         border-top: 5px solid chocolate;
+     }
+     .box h4{
+        color: chocolate;
+         padding: 30px;
+     }
+     .box1 .start{
+         font-weight: bold;
+     }
+     .box1 .money{
+         font-size: 1.7rem;
+         font-weight: bold;
+     }
+     .card-body p{
+        font-size: 0.8rem;
+        text-align: center;
+     }
+     .b_e{
+         background: lightsalmon;
+     }
+     .card-foot a{
+         padding: 10px;
+         margin: 10px;
+     }
+     .section2{
+         padding: 50px;
+         background: lightgray;
+     }
+     .section2 h2{
+         font-weight: bold;
+     }
+     .boc{
+        width: 100%;
+         background: white;
+         align-items: center;
+         margin: 30px;
+         padding: 15px;
+         box-shadow: 0 0 20px 0 rgba(0 ,0, 0,0.3 );
+         transition: 0.4s ease;
+         border-radius: 9px;
+     }
+     .box5{
+         border-left: 5px solid teal;
+     }
+     .box2{
+         border-left: 5px solid violet;
+     }
+     .box3{
+         border-left: 5px solid peru;
+     }
+     .box4{
+         border-left: 5px solid brown;
+     }
+     .boc .card-head{
+         font-weight: bold;
+     }
+     .boc .card-body{
+         font-size: 0.8rem;
+     }
+     .card-headr .call:hover{
+         color: blue;
+     }
+     .card-headr .cal{
+         background: lightgray;
+         color: blue;
+         border-radius: 2px;
+     }
+     .call{
+         padding: 5px;
+         
+         border-left: 1px solid black;
+     }
+     .section3{
+         background: purple;
+         padding: 30px;
+         color: white;
+     }
+     .nine-header{
+    background: purple;
+    padding: 50px;
+    color: white;
+}
+.nine-header .money{
+    font-size: 2.5rem;
+}
+.nine-header h3{
+    font-size: 1.2rem;
+}
+.nine-header h5{
+    font-size: 1rem;
+}
+.section5{
+    background: lightgray;
+}
+.section5 h2{
+    color: black;
+}
+.section5 h4{
+    font-weight: bold;
+    color: black;
+}
+.footer{
+   background:purple;
+   width:100%;
+   padding: 50px;
+}
+.footer li{
+   list-style: none;
+   color: white;
+}
+.footer hr{
+   background-color:white;
+}
+.footer p{
+   color: white;
+}
+.footer .o{
+   font-size: 25px;
+   color: red;
+}
+.hover_div{
+    
+    width:70vw;
+    box-shadow:0px 0px 8px 1px rgb(182, 181, 181) ;
+    
+}
+.hover_a:hover .hover_div{
+    display:block;
+}
+.row1{
+    display:flex;
+    width:100%;
+    flex-wrap: wrap;
+    
+}
+.row1 .col{
+    width:33.33%;
+    flex:0 0 33.33%;
+    padding:10px 10px 10px 20px;
+   
+    
+}
+.hover_bg{
+      padding-top: 10px;
+      border-radius: 3px;
+      padding-left:10px ;
+  }
+
+ 
+  .dropdown:hover .dropdown-menu{
+      display:block;
+      transition:all 1s ease ;
+  }
+   .p_col1
+   {font-size:13px ; font-weight: 800; margin-bottom: 5px; color:black;}
+   .p_col_why{
+    font-size:13px ; font-weight: 700; text-align: center;  color:black;
+    
+   }
+   .hover_bg2{
+       padding:5px 20px;
+   }
+   .hover_bg2:hover{
+ background-color:#E5B3FE ;
+   }
+   .p_col1:hover,.p_col_why:hover{
+       color:blue;
+       padding-bottom:10px ;
+   }
+   .hover_bg:hover .p_col1 ,.hover_bg:hover .p_col2{
+ color:blue;
+   }
+   .p_col2{
+    font-size:12px ;color:black ; margin-bottom: 5px;  
+   }
+   .hover_bg:hover{
+       background-color: rgba(201, 201, 201, 0.5);
+   }
+   .sticky-top2{
+  position:sticky;
+  top:60px; 
+  z-index:1019; 
+}
+.navbar{
+   background-color:transparent ;
+    
+}
+.nav-btn{
+    background-color: blue;
+    color:white;
+    padding:5px 10px ;
+    border:none;
+    outline: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 15px;
+}
+.nav-item{
+padding:5px 15px;
+text-align: center;
+text-transform: uppercase;
+color:black;
+font-weight: bolder;
+font-size: 12px;
+}
+.sec_h{
+    color:black;
+    font-weight: 800;
+    text-align: center;
+    line-height: 30px;
+}
+.freq_btn1,.freq_btn2,.freq_btn3,.freq_btn4{
+    border:none;
+    outline:none;
+    padding:5px;
+
+}
+
+
+    
+
+</style>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <a class="navbar-brand" href="#" style="margin-left:40px ;">Editage</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" 
+        >
+        <div style="display:flex; justify-content: space-between; margin-right:40px ; width:100%;">
+          <ul class="navbar-nav "  >
+            <li class="nav-item dropdown">
+              <a class="nav-link " >
+                Services
+              </a>
+              <div class="dropdown-menu  p-0  " aria-labelledby="navbarDropdown" >
+                <div class="hover_div container p-0">
+                  <div class="row1 " style="max-width:100% ;">
+                    <div class="col ">
+                      <p style="color:gray;font-size:12px ; margin:15px 0px 20px 0px">Most Popular Services</p>
+                      <div class="row ml-0 mr-0  hover_bg">
+                        <div class="col-md-2 p-0"> <i class="fas fa-cube"  style="color:#E5B3FE; font-size:30px;""
+                           " ></i></div>
+                        <div class="col-md-10 p-0">
+                      <a  class="p_col1" href="./English Editing Services.html">English Editing</a>
+                    <p style="font-size:10px ; color:rgb(136, 135, 135);font-weight: 500;"">Language perfection for manuscript ,thesis Academic</p>
+                  </div>
+                    </div>
+                    <div class="row ml-0 mr-0  hover_bg">
+                      <div class="col-md-2 p-0"> <i class="fas fa-cube"  style="color:#E5B3FE; font-size:30px;
+                         " ></i></div>
+                      <div class="col-md-10 p-0">
+                    <a class="p_col1">Translation Service</a>
+                  <p style="font-size:10px ; color:rgb(136, 135, 135);font-weight: 500;"">Language perfection for manuscript ,thesis Academic</p>
+                </div>
+                  </div>
+                  <div class="row ml-0 mr-0  hover_bg">
+                    <div class="col-md-2 p-0"> <i class="fas fa-cube"  style="color:#E5B3FE; font-size:30px;
+                       " ></i></div>
+                    <div class="col-md-10 p-0  ">
+                  <a  class="p_col1" href="./publication support package.html">Publication Support Packages</a>
+                <p style="font-size:10px ; color:rgb(136, 135, 135);font-weight: 500;">Language perfection for manuscript ,thesis Academic</p>
+              </div>
+                </div>
+                <div class="row ml-0 mr-0 hover_bg">
+                  <div class="col-md-2 p-0"> <i class="fas fa-cube"  style="color:#E5B3FE; font-size:30px;
+                     " ></i></div>
+                  <div class="col-md-10 p-0">
+                <a class="p_col1" >Research Promotion</a>
+              <p style="font-size:10px ; color:rgb(136, 135, 135);font-weight: 500;">
+                Language perfection for manuscript ,thesis Academic</p>
+            </div>
+              </div>
+    
+    
+    
+    
+    
+    
+              </div>
+              <div class="col" style="background-color: rgb(219, 218, 218);">
+                <p style="color:gray;font-size:12px ;margin:15px 0px 20px 0px">Other publication support Services</p>
+                <div class="hover_bg" style="padding-bottom:10px ;">
+                <a class="p_col2" >Journal selection</a>
+                <p style="font-size: 10px ;color:gray;font-weight: 500;">Shortlist 3-4 journals for you.</p></div>
+                <div class="hover_bg"  style="padding-bottom:10px ;">
+                <a  class="p_col2" >Journal selection</a>
+                <p style="font-size: 10px ;color:gray;font-weight: 500;">Shortlist 3-4 journals for you.</p></div>
+                <div class="hover_bg"  style="padding-bottom:10px ;">
+                <a  class="p_col2" >Journal selection</a>
+                <p style="font-size: 10px ;color:gray;font-weight: 500;">Shortlist 3-4 journals for you.</p></div>
+                <div class="hover_bg"  style="padding-bottom:10px ;">
+                <a  class="p_col2" >Journal selection</a>
+                <p style="font-size: 10px ;color:gray;font-weight: 500;">Shortlist 3-4 journals for you.</p></div>
+                <div class="hover_bg"  style="padding-bottom:10px ;">
+                <a  class="p_col2" >Journal selection</a>
+                <p style="font-size: 10px ;color:gray;font-weight: 500;">Shortlist 3-4 journals for you.</p></div>
+                <div class="hover_bg"  style="padding-bottom:10px ;">
+                <p  class="p_col2" >Journal selection</p>
+                <p style="font-size: 10px ;color:gray;font-weight: 500;">Shortlist 3-4 journals for you.</p></div>
+    
+    
+    
+    
+              </div>
+              <div class="col" style="background-color:rgb(219, 218, 218); ">
+                <p style="color:gray;font-size:12px ;margin:15px 0px 20px 0px">Most Popular Services</p>
+                <div class="hover_bg"  style="padding-bottom:10px ;">
+                  <p class="p_col2">Journal selection</p>
+                  <p style="font-size: 10px ;color:gray;font-weight: 500;">Shortlist 3-4 journals for you.</p></div>
+                  <div class="hover_bg"  style="padding-bottom:10px ;">
+                  <p  class="p_col2">Journal selection</p>
+                  <p style="font-size: 10px ;color:gray;font-weight: 500;">Shortlist 3-4 journals for you.</p></div>
+                  <div class="hover_bg"  style="padding-bottom:10px ;">
+                  <p  class="p_col2">Journal selection</p>
+                  <p style="font-size: 10px ;color:gray;font-weight: 500;">Shortlist 3-4 journals for you.</p></div>
+                  <div class="hover_bg"  style="padding-bottom:10px ;">
+                  <p class="p_col2" >Journal selection</p>
+                  <p style="font-size: 10px ;color:gray;font-weight: 500;">Shortlist 3-4 journals for you.</p></div>
+                  <div class="hover_bg"  style="padding-bottom:10px ;">
+                  <p  class="p_col2"> Journal selection</p>
+                  <p style="font-size: 10px ;color:gray;font-weight: 500;">Shortlist 3-4 journals for you.</p></div>
+                  <div class="hover_bg"  style="padding-bottom:10px ;">
+                  <p   class="p_col2">Journal selection</p>
+                  <p style="font-size: 10px ;color:gray;font-weight: 500;">Shortlist 3-4 journals for you.</p></div>
+      
+    
+              </div></div></div></div>
+    
+    
+    
+    
+    
+    
+    
+    
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" >
+                Why Choose us?
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown"
+               style="box-shadow: 0px 0px 8px 1px rgb(180, 179, 179); padding:20px;">
+    
+               <div class="hover_bg2"><a class="dropdown-item p_col_why" href="./why_choose_us.html" >Why Choose Us</a></div> 
+               <div class="hover_bg2"> <a class="dropdown-item p_col_why" href="./why_choose2.html" >Guaranteed Quality</a></div> 
+               <div class="hover_bg2"> <a class="dropdown-item  p_col_why" href="#" >Expert & Subject Area</a></div> 
+               <div class="hover_bg2"><a class="dropdown-item  p_col_why" href="#">Local Customised Support</a></div> 
+               <div class="hover_bg2"><a class="dropdown-item  p_col_why" href="#" >Success Stories</a></div> 
+                
+                
+            </li>
+    
+    
+            
+           
+            <li class="nav-item ">
+              <a class="nav-link" href="#">How it works </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">insights</a>
+            </li>
+          </ul>
+            <ul class="navbar-nav " style="display:flex">
+              <li class="nav-item ">
+                <a class="nav-link" href="#">help </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">login</a>
+              </li> 
+              <li class="nav-item">
+                <button class="nav-btn" >Get Qoute</a>
+              </li> 
+            
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section class="header">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-8">
+                      <h2 class="p-2">Advanced Editing Service<span class="budget">BEST BUDGET PLAN AVAILABLE</span></h2>
+                      <h6>Our Advanced Editing service provides a thorough edit to deliver a well-written
+                          , perfectly formatted manuscript that meets global publication standards.</h6>
+
+                          <li>Get high-quality editing with sentence construction, grammar, and readability improvements</li>
+                          <li>Be confident about the accuracy of terminology in your subject area</li>
+                          <li>Benefit from 2 levels of thorough editing by 2 native editors</li>
+
+                          <h6 class="add">Additional Benefits :</h6>
+                          <p class="edit">1. &nbsp;Editing certificate</p>
+                          <p class="edit">2. &nbsp;Journal Formatting</p>
+                          <p class="edit">3. &nbsp;Unlimited Q&A with your editor </p>
+                          <p class="edit">4. &nbsp;Re-editing for 15 months</p>
+                          
+                          
+                  </div>
+                  <div class="col-md-4">
+                      <div class="card">
+                        <div class="card box">
+                            <div class="box1">
+                            <div class="card-head text-center"><h4 class="advance">Advanced Editing</h4><p class="start">Starting from</p><h5><span class="money">$0.051</span>/word</h5>
+                            
+                            </div>
+                            <div class="card-body">
+                                <p class="b_e">THOROUGH EDITING FOR LANGUAGE, READABILITY, TECHNICAL ACCURACY</p>
+                                <p>Don't need major revisions before journal submission?</p>
+                            </div>
+                            <div class="card-foot text-center">
+                                <a href="#" class="btn btn-primary">Get Started</a>
+                            </div>
+                          </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              </div>
+                    </section>
+
+
+                    <section class="section2">
+                        <div class="container">
+                            <div class="text-center p-5">
+                                <h2>Standard benefits available with all editing services</h2>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4" style= "display:flex; align-items:center; justify-content: center;">
+                                    <img src="editechimg.jpg" width="300px" height="400px">
+                                </div>
+
+                                
+                                    <div class="col-md-4 col-sm-4">
+                                        <div class="boc box5">
+                                            
+                                            <div class="card-head">Editing Certificate
+                    
+                                            </div>
+                                            <div class="card-body">
+                                               
+                                                At the time of manuscript submission, many international journals require an editing
+                                                 certificate from non-English-native authors. In order to enable a seamless submission
+                                                  journey.
+                                            </div>
+                                            <a href="#">View Sample</a>
+                                         
+                                          </div>
+
+
+                                          <div class="boc box2">
+                                            
+                                            <div class="card-head">Journal formatting
+                    
+                                            </div>
+                                            <div class="card-body">
+                                                The layout and format of your manuscripts need to be consistent with the submission 
+                                                requirements of your target journal.with style guides 
+                                                such as the APA, MLA, ACS, AMA, IEEE, and all major publisher and journal guidelines,
+                                                 our experts ensure.
+
+                                                </div>
+                                             
+                                          </div>
+
+                                    </div>
+                    
+                    
+                    
+                    
+                    
+                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                      
+                                    <div class="boc box3">
+                                    
+                                        <div class="card-head">Unlimited Q&A with your editor  </div>
+                                        <div class="card-body">
+                                            We understand that many authors have several queries regarding their edited document.
+                                             And, to enable a discussion between authors and experts, we offer unlimited
+                                              (and timely) Q&A with your expert, free of cost.
+
+                                        </div>
+                                  
+                                      
+                                      </div>
+
+
+                            <div class="boc box4">
+                                            
+                            <div class="card-head">Re-editing for 365 days</div>
+                        <div class="card-body">
+                         Even after our initial edit, manuscripts may need to be rewritten based on feedback
+                         from peers or journal peer reviewers. Our re-proofing service ensures that your
+                         manuscript is publication-ready at all points, with one re-edit at 60% discount.
+                        This benefit is available within a year.
+
+                        </div>
+                                      
+                                          
+                        </div>
+
+                        </div>
+                </div>
+            </div>
+    </section>
+
+
+    <section>
+        <div class="container">
+           <div class="text-center p-5">
+               <h2>Samples to understand which service is suitable for you</h2>
+           </div>
+           <div class="boc" style="box-shadow: 0 0 20px 0 rgba(0 ,0, 0,0.3 ); ;">
+               <div class="card-headr">
+                   <div class="row text-center">
+                       <div class="col-md-2 cal">MatheMatices</div>
+                       <div class="col-md-3 call">Economices</div>
+                       <div class="col-md-2 call">Engineering</div>
+                       <div class="col-md-3 call">Madicine</div>
+                       <div class="col-md-2 call">Psychology</div>
+                      
+                   </div>
+               </div>
+               <div class="card-body">
+                   <div class="row">
+                       <div class="col-md-8">
+                   <p class="p-5">At Editage, our English editing and proofreading services polish and perfect your manuscript
+                       with not one, but two thorough checks for grammar, sentence structure, paper structure, and
+                        impactful communication of your research. Native Ph.D. and internationally certified 
+                        editors help you ready your paper for successful submission in international English
+                         language journals. With the highest quality guaranteed, you can choose from the fastest 
+                         delivery options to the lowest budget plans that suit you. Opt for our premium services for
+                          in-depth guidance from top journal peer reviewers and subject matter experts to significantly
+                           increase your chances of getting published.
+                           At Editage, our English editing and proofreading services polish and perfect your manuscript
+                       with not one, but two thorough checks for grammar, sentence structure, paper structure, and
+                        impactful communication of your research. Native Ph.D. and internationally certified 
+                        editors help you ready your paper for successful submission in international English
+                         language journals. With the highest quality guaranteed, you can choose from the fastest 
+                         delivery options to the lowest budget plans that suit you. Opt for our premium services for
+                          in-depth guidance from top journal peer reviewers and subject matter experts to significantly
+                           increase your chances of getting published.
+                   </p>
+                        </div>
+                        <div class="col-md-4 delete p-2">
+                            <h6>Deleted:</h6>
+                            <p>subject matter experts to significantly
+                               increase and decrease.</p><br>
+
+                               <h6>Deleted:</h6>
+                            <p>subject matter experts to significantly
+                               increase and decrease.</p><br>
+
+                               <h6>Commented:</h6>
+                            <p>subject matter experts to significantly
+                               increase.subject matter experts to significantly
+                               increase.subject matter experts to significantly
+                               increase.subject matter experts to significantly
+                               increase.</p><br>
+
+                       </div>
+                   </div>
+               </div>
+               
+             </div>
+             
+            
+             
+          
+        </div>
+
+   </section>
+
+
+   <section class="section3">
+    <div class="container">
+        <div class="row"  style="justify-content: right;">
+            <div class="col-md-4 sm-box">
+                <h1>8 hr</h1>
+                <h4>Express delivery</h4>
+            </div>
+            <div class="col-md-8 sl-box">
+                <h3>Keeping up with your pace</h3>
+                <p>As your publication partner, we understand the pressing deadlines you chase. When you’re in a rush,
+                     we can edit your document and deliver it to you in under 8 hours </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!---frequent asked question-->
+<div class="frequent_q" style=" padding-bottom:60px ;margin-top:60px ;">
+   
+    <h3 class="sec_h">Frequently Asked Questions</h3>
+    <div class="container" style="margin-top: 60px;">
+    <div class="row" >
+
+        <div class="col-md-2" style="padding:10px;text-align: center;">01.</div>
+        <div class="col-md-10" style=" border-bottom:1px solid gray ;">
+            <div class="row" style="justify-content: space-between;">
+              <p class="mb-0"style="padding:10px">I have made some changes to my paper after you edited it. 
+                  Is the quality guarantee still valid?</p>
+                  <button class="freq_btn1 "data-toggle="collapse" data-target="#togglematter1"
+                   aria-controls="togglematter1" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-cube"  style="color:blue; font-size:20px;
+                padding:5px;">
+               </i>
+            </button></div>      
+          <div class="togglematter1" id="togglematter1">
+            <div class="row ml-0 mr-0">
+               
+
+            <div class="col-md-10">
+            <p style="padding:20px;font-size:14px ;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                 Libero maxime
+                umque ab, dignissimos, molestias mollitia dolore quia deleniti delectus error? Hic,
+                 sint rem qui veniam recusandae eius!</p>   
+           </div></div></div></div>
+   
+        </div>
+        <div class="row" >
+
+            <div class="col-md-2" style="padding:10px;text-align: center;">02.</div>
+            <div class="col-md-10" style=" border-bottom:1px solid gray ;">
+                <div class="row" style="justify-content: space-between;">
+                  <p  class="mb-0"style="padding:10px">I have made some changes to my paper after you edited it. 
+                      Is the quality guarantee still valid?</p>
+                      <button class="freq_btn2 " data-toggle="collapse" data-target="#togglematter2"
+                      aria-controls="togglematter2" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-cube"  style="color:blue; font-size:20px;
+                    padding:5px;">
+                   </i>
+                </button></div>      
+              <div class="togglematter2" id="togglematter2">
+                <div class="row ml-0 mr-0">
+                   
+
+                <div class="col-md-10">
+                <p style="padding:20px;font-size:14px ;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                     Libero maxime
+                    umque ab, dignissimos, molestias mollitia dolore quia deleniti delectus error? Hic,
+                     sint rem qui veniam recusandae eius!</p>   
+               </div></div></div></div>
+       
+            </div>
+            <div class="row" >
+
+                <div class="col-md-2" style="padding:10px;text-align: center;">03.</div>
+                <div class="col-md-10" style=" border-bottom:1px solid gray ;">
+                    <div class="row" style="justify-content: space-between;">
+                      <p  class="mb-0"style="padding:10px ">I have made some changes to my paper after you edited it. 
+                          Is the quality guarantee still valid?</p>
+                          <button class="freq_btn3 " data-toggle="collapse" data-target="#togglematter3"
+                          aria-controls="togglematter3" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-cube"  style="color:blue; font-size:20px;
+                        padding:5px;">
+                       </i>
+                    </button></div>      
+                  <div class="togglematter3" id="togglematter3">
+                    <div class="row ml-0 mr-0">
+                       
+    
+                    <div class="col-md-10">
+                    <p style="padding:20px;font-size:14px ;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                         Libero maxime
+                        umque ab, dignissimos, molestias mollitia dolore quia deleniti delectus error? Hic,
+                         sint rem qui veniam recusandae eius!</p>   
+                   </div></div></div></div>
+           
+                </div>
+                <div class="row" >
+
+                    <div class="col-md-2" style="padding:10px;text-align: center;">04.</div>
+                    <div class="col-md-10" style=" border-bottom:1px solid gray ;">
+                        <div class="row" style="justify-content: space-between; ">
+                          <p  class="mb-0"style="padding:10px ">
+                            I have made some changes to my paper after you edited it. 
+                              Is the quality guarantee still valid?</p>
+                              <button class="freq_btn4 "data-toggle="collapse" data-target="#togglematter4"
+                              aria-controls="togglematter4" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fas fa-cube"  style="color:blue; font-size:20px;
+                            padding:5px;">
+                           </i>
+                        </button></div>      
+                      <div class="togglematter4" id="togglematter4">
+                        <div class="row ml-0 mr-0">
+                           
+        
+                        <div class="col-md-10">
+                        <p style="padding:20px;font-size:14px ;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                             Libero maxime
+                            umque ab, dignissimos, molestias mollitia dolore quia deleniti delectus error? Hic,
+                             sint rem qui veniam recusandae eius!</p>   
+                       </div></div></div></div>
+               
+                    </div>
+</div>
+</div>
+
+<section class="nine-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 md-box">
+                <h3><span class="money">1 in 10</span>&nbsp;&nbsp;&nbsp;&nbsp;BELS-certified editors</h3>
+                <h5>across the globe are associated with Editage</h5>
+            </div>
+            <div class="col-md-8 sl-box">
+                <p>Our team comprises physicians, PhDs, MDs, postgraduates, engineers, and even
+                     journal peer reviewers who are not only technically competent but also have
+                      a deep understanding of the nuances of your subject.</p>
+        
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="section5">
+    <div class="container">
+        <div class="text-center p-5">
+            <h2>Unable to make a decision yet? </h2>
+            <h4>Let us help you…</h4>
+        </div>
+        <div class="row">
+            <div class="col-md-4 p-3">
+                <div class="card p-4 text-center">
+                    <div class="card-head  p-2"style="font-size:1.2rem; color:blue; font-weight:bold;">Call</div>
+                    <div class="card-body" style="font-size: 0.9rem; color: gray;">Speak to a client manager. Call us on<p style="font-size: 1rem; color: blue; font-weight: bold;">+917754656979</p></div>
+                </div>
+            </div>
+
+            <div class="col-md-4 p-3">
+                <div class="card p-4 text-center">
+                    <div class="card-head  p-2" style="font-size:1.2rem; color:blue; font-weight:bold;">Chat</div>
+                    <div class="card-body" style="font-size: 0.9rem; color: gray;">Chat with a client manager for instant answers</div>
+                </div>
+            </div>
+
+            <div class="col-md-4 p-3">
+                <div class="card p-4 text-center">
+                    <div class="card-head p-2"  style="font-size:1.2rem; color:blue; font-weight:bold;">Email</div>
+                    <div class="card-body">Send in your queries to<p style="font-size: 1rem; color: blue; font-weight: bold;">orion@gmail.com</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    
+
+<section class="ten-header">
+    <div class="container">
+    <div class="text-center p-5">
+        <h2>What our editing service users say</h2>
+    </div>
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+  
+    <!-- The slideshow -->
+    <div class="boc carousel-inner">
+      <div class="card-header carousel-item active">
+        <img src="./assets/img1.jpg" alt="Los Angeles">
+      </div>
+      <div class="card-body carousel-item">
+        <img src="./assets/img1.jpg" alt="Chicago">
+      </div>
+      <div class="card-footer carousel-item">
+        <img src="./assets/img1.jpg" alt="New York">
+      </div>
+    </div>
+  
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  
+  </div>
+  </div>
+  </section>
+
+
+  <section class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 headings">
+          <h6 class="text-white font-weight-bold">SERVICES</h6><br>
+          <li>Advanced Editing Servics</li>
+          <li>Premium Editing Servics</li>
+          <li>Scientific Editing Servics</li>
+          <li>Gold Publication Support Pack</li>
+          <li>Silver Publication Support Pack</li>
+          <li>Platinum Publication Support Pack</li>
+          
+        </div>
+        
+        <div class="col-md-3 headings">
+          <h6 class="text-white font-weight-bold">EDITAGE BENEFITS</h6><br>
+          <li>Refer a Friend</li>
+          <li>Editage For Lab</li>
+          <li>Editage Prepaid Card</li>
+          <li>Post Editing Support Page</li>
+          <li>Editage Insights</li>
+          <li>All About Publication</li>
+        </div>
+
+        <div class="col-md-3 headings">
+            <h6 class="text-white font-weight-bold">ABOUT EDITAGE</h6><br>
+            <li>Payment Option </li>
+            <li>FAQS</li>
+            <li>partner With Us</li>
+            <li>Privacy Policy</li>
+            <li>Team Of Us</li>
+            <li>About Us</li>
+          </div>
+         
+    
+        <div class="col-md-3 headings">
+          <h6 class="text-white font-weight-bold">CONTACT US</h6><br>
+            <li>Call:&nbsp;+91 7896234589</li>
+            <li>editage@gmail.com</li>
+            <li><i class="fa fa-facebook-official" aria-hidden="true"></i>&nbsp;&nbsp;<i class="fa fa-telegram" aria-hidden="true">&nbsp;&nbsp;<i class="fa fa-twitter-square" aria-hidden="true"></i>&nbsp;&nbsp;<i class="fa fa-youtube-play" aria-hidden="true"></i>
+
+            </i>
+            </li>
+
+          </div>
+
+        </div>
+        <hr>
+
+        <p><span class="o">CACTUS</span>&nbsp;&nbsp;&nbsp;© 2002—2020 Cactus Communications. All Rights Reserved</p>
+
+</div>
+
+    </div>
+    
+    </section>
+
+
+
+</body>
+</html>

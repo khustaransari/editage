@@ -1,0 +1,181 @@
+body{
+  margin:0px;  
+}
+.why_header_text{
+  
+  color:rgb(17, 17, 102);
+  margin-bottom:30px ;
+  
+}
+.why_header{
+    background-image: url("./assets/background1.jpg");
+    background-repeat: no-repeat;
+   background-size: cover;
+   background-position: bottom;
+    min-height: 400px;
+    height:80vh;
+    top:0px;
+    
+    width:100%;
+}
+.why_scndnav_p{
+    color:black;
+    font-size: 15px;
+    font-weight: 600;
+    padding:10px ;
+    text-align: center;
+}
+.why_bl_p1{
+    color: rgb(26, 26, 131);
+    font-weight: 900;
+    font-size: 12px;
+}
+.why_bl_p1::before{
+    content:"1 in 10";
+    font-size:30px ;
+    font-weight: 600;
+    
+}
+.why_bl_p1::after{
+    content:"across the globe are associated with Editage";
+    font-size:15px ;
+    font-weight: 600;
+   
+    display:block;
+
+}
+.why_sec_2h1,.why_sec_2h2,.why_sec_2h3{
+    color:black;
+     font-weight: 900;
+     font-size:20px ;
+     padding:5px;
+     margin-bottom: 0px; 
+     line-height: 30px;
+     margin-bottom:20px ;
+}
+.why_sec_2h1::before{
+    content:"Perfection";
+    text-transform: uppercase;
+    font-size: 13px;
+    display: block;
+    color:blueviolet;
+    font-weight:500;
+    line-height: 25px;
+}
+.why_sec_2h2::before{
+    content:"Smart & Accurate";
+    text-transform: uppercase;
+    font-size: 13px;
+    display: block;
+    color:blueviolet;
+    font-weight:500;
+}
+.why_sec_2h3::before{
+    content:"Comprehensive";
+    text-transform: uppercase;
+    font-size: 13px;
+    display: block;
+    color:blueviolet;
+    font-weight:500;
+}
+.why_our_c .p1{
+    padding:10px;
+    font-size:17px ;
+    color:black;
+
+}
+
+
+.sticky-top2{
+  position:sticky;
+  top:60px; 
+  z-index:1019; 
+}
+.why_circle{
+    height:120px ; width:120px ; border-radius:50% ;
+    border:1px solid blue;margin:5px auto; 
+}
+.why_header2{
+    background-color: rgb(136, 182, 226,0.1);
+    height:80vh;
+}
+.why_nav2{
+    background-color: rgb(136, 182, 226,0.1); 
+}
+.blue_h_why{
+    color:white;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 30px;  
+}
+.wrapper1{
+    border-left: 5px solid rgb(87, 184, 214);;
+    margin:10px 10px 10px 0px;
+}
+.blue_div_why{
+    background-color:rgb(39, 39, 145) ;
+}
+.blue_2h_why{
+   
+        color:white;
+        font-weight: 500;
+        font-size:12px ;
+        text-align: center;
+        padding-top: 30px;}
+    
+.blue_2h_why::before{
+        content:"";
+        height:2px;
+        width:300px;
+        background-color:white ;
+         display:inline-block;
+         margin-right:20px ;
+    }
+.blue_2h_why::after{
+        content:"";
+        height:2px;
+        width:300px;
+        background-color:white ;
+        display: inline-block;
+        margin-left:20px ;
+        
+}
+.freq_btn1,.freq_btn2,.freq_btn3,.freq_btn4{
+    border:none;
+    outline:none;
+    padding:5px;
+
+}
+/* card styling start*/
+ul
+{
+    list-style: none;
+}
+a:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
+.card {
+    
+    border:none;
+    margin:10px;
+    
+}
+
+.img-hover-zoom {
+    overflow: hidden;
+  }
+  .img-hover-zoom img {
+    transition: transform .5s ease;
+  }
+  .img-hover-zoom:hover img {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+ 
+  
+  .icon
+  {font-size:30px;
+    }
+  /* card styling finish*/
+
